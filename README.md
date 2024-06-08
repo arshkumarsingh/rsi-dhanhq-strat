@@ -35,7 +35,7 @@ This application is designed to implement and visualize a trading strategy using
 
 1. **Run the application**:
    ```sh
-   python trading_strategy_app.py
+   python masterfile.py
    ```
 
 2. **Using the GUI**:
