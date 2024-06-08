@@ -1,5 +1,6 @@
 import pandas as pd
 import tkinter as tk
+import asyncio
 from strategy import generate_signals
 from data_fetching import fetch_data
 
@@ -30,11 +31,14 @@ class TradingApp:
         self.result_label.pack()
 
     def run_strategy(self):
+        asyncio.run(self.fetch_and_run_strategy())
+
+    async def fetch_and_run_strategy(self):
         api_key = self.api_key_entry.get()
         symbol = self.symbol_entry.get()
         interval = self.interval_entry.get()
 
-        data = fetch_data(api_key, symbol, interval)
+        data = await fetch_data(api_key, symbol, interval)
         if data is not None and 'prices' in data:
             df = pd.DataFrame(data['prices'])
             signals = generate_signals(df)
