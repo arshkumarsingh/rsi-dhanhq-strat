@@ -1,4 +1,4 @@
-aiohttp==3.8.1
+aiohttp==3.9.4
 asyncio==3.4.3
 matplotlib==3.4.3
 numpy==1.21.2
