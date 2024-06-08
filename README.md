@@ -19,7 +19,7 @@ This application is designed to implement and visualize a trading strategy using
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/trading-strategy-app.git](https://github.com/arshkumarsingh/rsi-dhanhq-strat
+   git clone https://github.com/arshkumarsingh/rsi-dhanhq-strat
    cd rsi-dhanhq-strat
    ```
 
